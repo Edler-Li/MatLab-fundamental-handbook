@@ -38,7 +38,7 @@ figure(2);
 surf(X, Y, Z);%surf command. Hyperbolic 3d surf
 title("Surface of $f(x,y)= x^2 - y^2 - 10sin(xy) + \frac{1}{xy}$","Interpreter","latex")
 
-% Graphing feasible regions of 2D linear programs
+% Graphing feasible regions of 2D linear programs------------------------
 R = -1:.01:10;
 [X, Y] = meshgrid(R, R);
 
@@ -63,6 +63,7 @@ axis on;
 set(gca, "YDir", "normal");%Make the grah in normal y direction
 colormap("parula");%Color map
 
+%Placing Labels on Graphs-----------------------------------------
 %We want to label those four little corner points in that particular. First
 %we need to find where they are.
 px = [0, 8.4, 0, 4.467];
